@@ -1,0 +1,223 @@
+cspell,Injects actions to fix typos found by `cspell`., diagnostics.cspell code_actions.cspell
+eslint,Injects actions to fix ESLint issues or ignore broken rules., code_actions.eslint
+eslint_d,Injects actions to fix ESLint issues or ignore broken rules. Like ESLint but faster., code_actions.eslint_d
+gitsigns,Injects code actions for Git operations at the current cursor position (stage / preview / reset hunks blame etc.)., code_actions.gitsigns
+ltrs,LanguageTool-Rust (LTRS) is both an executable and a Rust library that aims to provide correct and safe bindings for the LanguageTool API., code_actions.ltrs
+proselint,An English prose linter. Can fix some issues via code actions., code_actions.proselint
+refactoring,The Refactoring library based off the Refactoring book by Martin Fowler., code_actions.refactoring
+shellcheck,Provides actions to disable ShellCheck errors/warnings either for the current line or for the entire file., code_actions.shellcheck
+statix,Lints and suggestions for the nix programming language., code_actions.statix
+xo,❤️ JavaScript/TypeScript linter (ESLint wrapper) with great defaults, code_actions.xo
+luasnip,Snippet engine for Neovim written in Lua., completion.luasnip
+vsnip,Snippets managed by vim-vsnip., completion.vsnip
+actionlint,Actionlint is a static checker for GitHub Actions workflow files., diagnostics.actionlint
+alex,Catch insensitive inconsiderate writing., diagnostics.alex
+ansiblelint,Linter for Ansible playbooks roles and collections., diagnostics.ansiblelint
+buf,A new way of working with Protocol Buffers., diagnostics.buf
+buildifier,buildifier is a tool for formatting and linting bazel BUILD WORKSPACE and .bzl files., diagnostics.buildifier
+cfn_lint,Validate AWS CloudFormation yaml/json templates against the AWS CloudFormation Resource Specification, diagnostics.cfn_lint
+checkmake,`make` linter., diagnostics.checkmake
+chktex,`latex` semantic linter., diagnostics.chktex
+clang_check,ClangCheck combines the LibTooling framework for running a Clang tool with the basic Clang diagnostics by syntax checking specific files in a fast command line interface., diagnostics.clang_check
+clj_kondo,A linter for clojure code that sparks joy, diagnostics.clj_kondo
+cmake_lint,Check cmake listfiles for style violations common mistakes and anti-patterns., diagnostics.cmake_lint
+codespell,Codespell finds common misspellings in text files., diagnostics.codespell
+commitlint,commitlint checks if your commit messages meet the conventional commit format., diagnostics.commitlint
+cppcheck,A tool for fast static analysis of C/C++ code., diagnostics.cppcheck
+cpplint,Cpplint is a command-line tool to check C/C++ files for style issues following Google's C++ style guide, diagnostics.cpplint
+credo,Static analysis of `elixir` files for enforcing code consistency., diagnostics.credo
+cspell,cspell is a spell checker for code., diagnostics.cspell
+cue_fmt,Reports on formatting errors in .cue language files., diagnostics.cue_fmt
+curlylint,Experimental HTML templates linting for Jinja Nunjucks Django templates Twig and Liquid., diagnostics.curlylint
+deadnix,Scan Nix files for dead code., diagnostics.deadnix
+djlint,✨ 📜 🪄 ✨ HTML Template Linter and Formatter., diagnostics.djlint
+editorconfig_checker,A tool to verify that your files are in harmony with your `.editorconfig`., diagnostics.editorconfig_checker
+erb_lint,Lint your ERB or HTML files, diagnostics.erb_lint
+eslint,A linter for the JavaScript ecosystem., diagnostics.eslint
+eslint_d,Like ESLint but faster., diagnostics.eslint_d
+fish,Basic linting is available for fish scripts using `fish --no-execute`., diagnostics.fish
+flake8,flake8 is a python tool that glues together pycodestyle pyflakes mccabe and third-party plugins to check the style and quality of Python code., diagnostics.flake8
+gccdiag,gccdiag is a wrapper for any C/C++ compiler (gcc avr-gcc arm-none-eabi-gcc etc) that automatically uses the correct compiler arguments for a file in your project by parsing the `compile_commands.json` file at the root of your project., diagnostics.gccdiag
+gdlint,A linter that performs a static analysis on gdscript code according to some predefined configuration., diagnostics.gdlint
+gitlint,Linter for Git commit messages., diagnostics.gitlint
+golangci_lint,A Go linter aggregator., diagnostics.golangci_lint
+hadolint,A smarter Dockerfile linter that helps you build best practice Docker images., diagnostics.hadolint
+haml_lint,Tool for writing clean and consistent HAML., diagnostics.haml_lint
+jshint,JSHint is a tool that helps to detect errors and potential problems in your JavaScript code., diagnostics.jshint
+jsonlint,A pure JavaScript version of the service provided at jsonlint.com., diagnostics.jsonlint
+ktlint,An anti-bikeshedding Kotlin linter with built-in formatter., diagnostics.ktlint
+ltrs,LanguageTool-Rust (LTRS) is both an executable and a Rust library that aims to provide correct and safe bindings for the LanguageTool API., diagnostics.ltrs
+luacheck,A tool for linting and static analysis of Lua code., diagnostics.luacheck
+markdownlint,Markdown style and syntax checker., diagnostics.markdownlint
+markdownlint_cli2,A fast flexible configuration-based command-line interface for linting Markdown/CommonMark files with the markdownlint library, diagnostics.markdownlint_cli2
+mdl,A tool to check Markdown files and flag style issues., diagnostics.mdl
+misspell,Checks commonly misspelled English words in source files., diagnostics.misspell
+mlint,Linter for MATLAB files, diagnostics.mlint
+opacheck,Check Rego source files for parse and compilation errors., diagnostics.opacheck
+perlimports,A command line utility for cleaning up imports in your Perl code, diagnostics.perlimports
+php,Uses the php command-line tool's built in `-l` flag to check for syntax errors., diagnostics.php
+phpcs,PHP_CodeSniffer is a script that tokenizes PHP JavaScript and CSS files to detect violations of a defined coding standard., diagnostics.phpcs
+phpmd,Runs PHP Mess Detector against PHP files., diagnostics.phpmd
+phpstan,PHP static analysis tool., diagnostics.phpstan
+proselint,An English prose linter., diagnostics.proselint
+protoc_gen_lint,A plug-in for Google's Protocol Buffers (protobufs) compiler to lint .proto files for style violations., diagnostics.protoc_gen_lint
+protolint,A pluggable linter and fixer to enforce Protocol Buffer style and conventions., diagnostics.protolint
+psalm,A static analysis tool for finding errors in PHP applications., diagnostics.psalm
+puglint,An unopinionated and configurable linter and style checker for Pug., diagnostics.puglint
+puppet_lint,Check that your Puppet manifest conforms to the style guide., diagnostics.puppet_lint
+pycodestyle,pycodestyle is a tool to check your Python code against some of the style conventions in PEP 8., diagnostics.pycodestyle
+pydocstyle,pydocstyle is a static analysis tool for checking compliance with Python docstring conventions., diagnostics.pydocstyle
+pylama,Code audit tool for Python., diagnostics.pylama
+pyproject_flake8,pyproject-flake8 is a flake8 wrapper to use with `pyproject.toml` configuration., diagnostics.pyproject_flake8
+qmllint,qmllint is a tool shipped with Qt that verifies the syntatic validity of QML files. It also warns about some QML anti-patterns., diagnostics.qmllint
+revive,Fast configurable extensible flexible and beautiful linter for Go., diagnostics.revive
+rpmspec,Command line tool to parse RPM spec files., diagnostics.rpmspec
+rstcheck,Checks syntax of reStructuredText and code blocks nested within it., diagnostics.rstcheck
+rubocop,The Ruby Linter/Formatter that Serves and Protects., diagnostics.rubocop
+ruff,An extremely fast Python linter written in Rust., diagnostics.ruff
+selene,Command line tool designed to help write correct and idiomatic Lua code., diagnostics.selene
+semgrep,Semgrep is a fast open-source static analysis tool for finding bugs and enforcing code standards at editor commit and CI time., diagnostics.semgrep
+semistandardjs,JavaScript style guide linter and formatter., diagnostics.semistandardjs
+shellcheck,A shell script static analysis tool., diagnostics.shellcheck
+solhint,An open source project for linting Solidity code. It provides both security and style guide validations., diagnostics.solhint
+spectral,A flexible JSON/YAML linter for creating automated style guides with baked in support for OpenAPI v3.1 v3.0 and v2.0., diagnostics.spectral
+standardjs,JavaScript style guide linter and formatter., diagnostics.standardjs
+standardrb,Ruby style guide linter and formatter., diagnostics.standardrb
+staticcheck,Advanced Go linter., diagnostics.staticcheck
+statix,Lints and suggestions for the Nix programming language., diagnostics.statix
+stylelint,A mighty modern linter that helps you avoid errors and enforce conventions in your styles., diagnostics.stylelint
+stylint,A linter for the Stylus CSS preprocessor., diagnostics.stylint
+teal,The compiler for Teal a typed dialect of Lua., diagnostics.teal
+textlint,The pluggable linting tool for text and Markdown., diagnostics.textlint
+tidy,Tidy corrects and cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards., diagnostics.tidy
+tsc,Parses diagnostics from the TypeScript compiler., diagnostics.tsc
+twigcs,Runs Twigcs against Twig files., diagnostics.twigcs
+vale,Syntax-aware linter for prose built with speed and extensibility in mind., diagnostics.vale
+vint,Linter for Vimscript., diagnostics.vint
+vulture,Vulture finds unused code in Python programs., diagnostics.vulture
+write_good,English prose linter., diagnostics.write_good
+xo,❤️ JavaScript/TypeScript linter (ESLint wrapper) with great defaults., diagnostics.xo
+yamllint,A linter for YAML files., diagnostics.yamllint
+zsh,Uses zsh's own -n option to evaluate but not execute zsh scripts. Effectively this acts somewhat like a linter although it only really checks for serious errors - and will likely only show the first error., diagnostics.zsh
+alejandra,The Uncompromising Nix Code Formatter, formatting.alejandra
+asmfmt,Format your assembler code in a similar way that `gofmt` formats your `go` code., formatting.asmfmt
+astyle,Artistic Style is a source code indenter formatter and beautifier for the C C++ C++/CLI Objective‑C C# and Java programming languages. This formatter works well for [Arduino](https://www.arduino.cc/) project files and is the same formatter used in the Arduino IDE., formatting.astyle
+autopep8,A tool that automatically formats Python code to conform to the PEP 8 style guide., formatting.autopep8
+bean_format,This pure text processing tool will reformat `beancount` input to right-align all the numbers at the same minimal column., formatting.bean_format
+beautysh,A Bash beautifier for the masses., formatting.beautysh
+bibclean,A portable program (written in C) that will pretty-print syntax check and generally sort out a BibTeX database file., formatting.bibclean
+black,The uncompromising Python code formatter, formatting.black
+blade_formatter,An opinionated blade template formatter for Laravel that respects readability, formatting.blade_formatter
+blue,Blue -- Some folks like black but I prefer blue., formatting.blue
+brittany,haskell source code formatter, formatting.brittany
+buf,A new way of working with Protocol Buffers., formatting.buf
+buildifier,buildifier is a tool for formatting and linting bazel BUILD WORKSPACE and .bzl files., formatting.buildifier
+cabal_fmt,Format .cabal files preserving the original field ordering and comments., formatting.cabal_fmt
+cbfmt,A tool to format codeblocks inside markdown and org documents., formatting.cbfmt
+clang_format,Tool to format C/C++/… code according to a set of rules and heuristics., formatting.clang_format
+cljstyle,Formatter for Clojure code., formatting.cljstyle
+cmake_format,Parse cmake listfiles and format them nicely., formatting.cmake_format
+codespell,Fix common misspellings in text files., formatting.codespell
+crystal_format,A tool for automatically checking and correcting the style of code in a project., formatting.crystal_format
+csharpier,CSharpier is an opinionated code formatter for c#, formatting.csharpier
+cue_fmt,A CUE language formatter., formatting.cue_fmt
+dart_format,Replace the whitespace in your program with formatting that follows Dart guidelines., formatting.dart_format
+,,filetypes = { "markdown" -- only runs `deno fmt` for markdown
+dfmt,Formatter for D source code., formatting.dfmt
+djhtml,A pure-Python Django/Jinja template indenter without dependencies., formatting.djhtml
+djlint,✨ 📜 🪄 ✨ HTML Template Linter and Formatter., formatting.djlint
+dprint,A pluggable and configurable code formatting platform written in Rust., formatting.dprint
+elm_format,elm-format formats Elm source code according to a standard set of rules based on the official [Elm Style Guide](https://elm-lang.org/docs/style-guide)., formatting.elm_format
+erb_lint,Lint your ERB or HTML files, formatting.erb_lint
+erlfmt,An opinionated Erlang code formatter., formatting.erlfmt
+eslint,Find and fix problems in your JavaScript code., formatting.eslint
+eslint_d,Like ESLint but faster., formatting.eslint_d
+fish_indent,Indent or otherwise prettify a piece of fish code., formatting.fish_indent
+fixjson,A JSON file fixer/formatter for humans using (relaxed) JSON5., formatting.fixjson
+fnlfmt,fnlfmt is a Fennel code formatter which follows established Lisp conventions when determining how to format a given piece of code., formatting.fnlfmt
+format_r,Format R code automatically., formatting.format_r
+fourmolu,Fourmolu is a formatter for Haskell source code., formatting.fourmolu
+fprettify,fprettify is an auto-formatter for modern Fortran code that imposes strict whitespace formatting written in Python., formatting.fprettify
+gdformat,A formatter for Godot's gdscript, formatting.gdformat
+gersemi,A formatter to make your CMake code the real treasure, formatting.gersemi
+gofmt,Formats go programs., formatting.gofmt
+gofumpt,Enforce a stricter format than gofmt while being backwards compatible. That is gofumpt is happy with a subset of the formats that gofmt is happy with., formatting.gofumpt
+goimports,Updates your Go import lines adding missing ones and removing unreferenced ones., formatting.goimports
+goimports_reviser,Tool for Golang to sort goimports by 3 groups: std general and project dependencies., formatting.goimports_reviser
+golines,Applies a base formatter (eg. goimports or gofmt) then shortens long lines of code., formatting.golines
+google_java_format,Reformats Java source code according to Google Java Style., formatting.google_java_format
+isort,Python utility / library to sort imports alphabetically and automatically separate them into sections and by type., formatting.isort
+joker,joker is a small Clojure interpreter linter and formatter written in Go., formatting.joker
+jq,Command-line JSON processor, formatting.jq
+json_tool,Provides a simple command line interface to validate and pretty-print JSON objects., formatting.json_tool
+just,Format your Justfile, formatting.just
+ktlint,An anti-bikeshedding Kotlin linter with built-in formatter., formatting.ktlint
+latexindent,A perl script for formatting LaTeX files that is generally included in major TeX distributions., formatting.latexindent
+lua_format,Reformats your Lua source code., formatting.lua_format
+markdownlint,A Node.js style checker and lint tool for Markdown/CommonMark files., formatting.markdownlint
+markdown_toc,API and CLI for generating a markdown TOC (table of contents) for a README or any markdown files., formatting.markdown_toc
+mdformat,An opinionated Markdown formatter that can be used to enforce a consistent style in Markdown files, formatting.mdformat
+mix,Build tool that provides tasks for creating compiling and testing elixir projects managing its dependencies and more., formatting.mix
+nginx_beautifier,Beautifies and formats nginx configuration files., formatting.nginx_beautifier
+nimpretty,nimpretty is a Nim source code beautifier to format code according to the official style guide., formatting.nimpretty
+nixfmt,nixfmt is a formatter for Nix code intended to apply a uniform style., formatting.nixfmt
+nixpkgs_fmt,nixpkgs-fmt is a Nix code formatter for nixpkgs., formatting.nixpkgs_fmt
+npm_groovy_lint,Lint format and auto-fix Groovy Jenkinsfile and Gradle files., formatting.npm_groovy_lint
+ocamlformat,Auto-formatter for OCaml code, formatting.ocamlformat
+ocdc,A changelog formatter, formatting.ocdc
+packer,The packer fmt Packer command is used to format HCL2 configuration files to a canonical format and style., formatting.packer
+perlimports,A command line utility for cleaning up imports in your Perl code, formatting.perlimports
+perltidy,perl script which indents and reformats perl scripts to make them easier to read. If you write perl scripts or spend much time reading them you will probably find it useful., formatting.perltidy
+pg_format,PostgreSQL SQL syntax beautifier, formatting.pg_format
+phpcbf,Tokenizes PHP files and detects violations of a defined set of coding standards., formatting.phpcbf
+phpcsfixer,Formatter for php files., formatting.phpcsfixer
+pint,An opinionated PHP code style fixer for minimalists., formatting.pint
+prettier,Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account wrapping code when necessary., formatting.prettier
+prettierd,prettier as a daemon for ludicrous formatting speed., formatting.prettierd
+prettier_d_slim,Makes prettier fast., formatting.prettier_d_slim
+prettier_standard,Formats with Prettier and lints with ESLint+Standard! (✿◠‿◠), formatting.prettier_standard
+prismaFmt,Formatter for the prisma filetype., formatting.prismaFmt
+protolint,A pluggable linter and fixer to enforce Protocol Buffer style and conventions., formatting.protolint
+ptop,The FPC Pascal configurable source beautifier. Name means 'Pascal-TO-Pascal'., formatting.ptop
+puppet_lint,Check that your Puppet manifest conforms to the style guide, formatting.puppet_lint
+purs_tidy,A syntax tidy-upper (formatter) for PureScript., formatting.purs_tidy
+qmlformat,qmlformat is a tool that automatically formats QML files according to the QML Coding Conventions., formatting.qmlformat
+raco_fmt,The fmt package provides an extensible tool to format Racket code using an expressive pretty printer library to compute the optimal layout., formatting.raco_fmt
+rego,Rego (opa fmt) Formatter, formatting.rego
+remark,remark is an extensive and complex Markdown formatter/prettifier., formatting.remark
+reorder_python_imports,Tool for automatically reordering python imports. Similar to isort but uses static analysis more., formatting.reorder_python_imports
+rescript,The ReScript format builtin., formatting.rescript
+rome,Formatter linter bundler and more for JavaScript TypeScript JSON HTML Markdown and CSS., formatting.rome
+rubocop,Ruby static code analyzer and formatter based on the community Ruby style guide., formatting.rubocop
+rufo,Opinionated ruby formatter., formatting.rufo
+rustfmt,A tool for formatting rust code according to style guidelines., formatting.rustfmt
+rustywind,CLI for organizing Tailwind CSS classes., formatting.rustywind
+scalafmt,Code formatter for Scala, formatting.scalafmt
+semistandardjs,JavaScript Standard Style a no-configuration automatic code formatter that just works., formatting.semistandardjs
+shellharden,Hardens shell scripts by quoting variables replacing `function_call` with `$(function_call)` and more., formatting.shellharden
+shfmt,A shell parser formatter and interpreter with `bash` support., formatting.shfmt
+sqlformat,The sqlformat command-line tool can reformat SQL files according to specified options., formatting.sqlformat
+sql_formatter,A whitespace formatter for different query languages, formatting.sql_formatter
+standardjs,JavaScript Standard Style a no-configuration automatic code formatter that just works., formatting.standardjs
+standardrb,Ruby Style Guide with linter & automatic code fixer. Based on Rubocop., formatting.standardrb
+stylelint,A mighty modern linter that helps you avoid errors and enforce conventions in your styles., formatting.stylelint
+styler,Non-invasive pretty printing of R code., formatting.styler
+stylish_haskell,Format Haskell code, formatting.stylish_haskell
+stylua,An opinionated code formatter for Lua., formatting.stylua
+surface,A code formatter for Surface the server-side rendering component library for Phoenix., formatting.surface
+swiftformat,SwiftFormat is a code library and command-line tool for reformatting `swift` code on macOS or Linux., formatting.swiftformat
+taplo,A versatile feature-rich TOML toolkit., formatting.taplo
+terrafmt,The terrafmt command formats `terraform` blocks embedded in Markdown files., formatting.terrafmt
+terraform_fmt,The terraform-fmt command rewrites `terraform` configuration files to a canonical format and style., formatting.terraform_fmt
+textlint,The pluggable linting tool for text and Markdown., formatting.textlint
+tidy,Tidy corrects and cleans up HTML and XML documents by fixing markup errors and upgrading legacy code to modern standards., formatting.tidy
+uncrustify,A source code beautifier for C C++ C# ObjectiveC D Java Pawn and Vala., formatting.uncrustify
+usort,Safe minimal import sorting for Python projects., formatting.usort
+verible_verilog_format,The verible-verilog-format formatter manages whitespace in accordance with a particular style. The main goal is to relieve humans of having to manually manage whitespace wrapping and indentation and to provide a tool that can be integrated into any editor to enable editor-independent consistency., formatting.verible_verilog_format
+xmllint,Despite the name xmllint can be used to format XML files as well as lint them and that's the mode this builtin is using., formatting.xmllint
+yamlfmt,yamlfmt is an extensible command line tool or library to format yaml files., formatting.yamlfmt
+yapf,Formatter for Python., formatting.yapf
+zigfmt,Reformat Zig source into canonical form., formatting.zigfmt
+zprint,Beautifully format Clojure and Clojurescript source code and s-expressions., formatting.zprint
+dictionary,Shows the first available definition for the current word under the cursor., hover.dictionary
+

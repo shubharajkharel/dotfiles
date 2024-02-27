@@ -1,0 +1,233 @@
+-- DEFAULT
+
+-- {
+--     api_key_cmd = nil,
+--     yank_register = "+",
+--     edit_with_instructions = {
+--       diff = false,
+--       keymaps = {
+--         close = "<C-c>",
+--         accept = "<C-y>",
+--         toggle_diff = "<C-d>",
+--         toggle_settings = "<C-o>",
+--         cycle_windows = "<Tab>",
+--         use_output_as_input = "<C-i>",
+--       },
+--     },
+--     chat = {
+--       welcome_message = WELCOME_MESSAGE,
+--       loading_text = "Loading, please wait ...",
+--       question_sign = "",
+--       answer_sign = "ﮧ",
+--       max_line_length = 120,
+--       sessions_window = {
+--         border = {
+--           style = "rounded",
+--           text = {
+--             top = " Sessions ",
+--           },
+--         },
+--         win_options = {
+--           winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+--         },
+--       },
+--       keymaps = {
+--         close = { "<C-c>" },
+--         yank_last = "<C-y>",
+--         yank_last_code = "<C-k>",
+--         scroll_up = "<C-u>",
+--         scroll_down = "<C-d>",
+--         new_session = "<C-n>",
+--         cycle_windows = "<Tab>",
+--         cycle_modes = "<C-f>",
+--         select_session = "<Space>",
+--         rename_session = "r",
+--         delete_session = "d",
+--         draft_message = "<C-d>",
+--         toggle_settings = "<C-o>",
+--         toggle_message_role = "<C-r>",
+--         toggle_system_role_open = "<C-s>",
+--       },
+--     },
+--     popup_layout = {
+--       default = "center",
+--       center = {
+--         width = "80%",
+--         height = "80%",
+--       },
+--       right = {
+--         width = "30%",
+--         width_settings_open = "50%",
+--       },
+--     },
+--     popup_window = {
+--       border = {
+--         highlight = "FloatBorder",
+--         style = "rounded",
+--         text = {
+--           top = " ChatGPT ",
+--         },
+--       },
+--       win_options = {
+--         wrap = true,
+--         linebreak = true,
+--         foldcolumn = "1",
+--         winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+--       },
+--       buf_options = {
+--         filetype = "markdown",
+--       },
+--     },
+--     system_window = {
+--       border = {
+--         highlight = "FloatBorder",
+--         style = "rounded",
+--         text = {
+--           top = " SYSTEM ",
+--         },
+--       },
+--       win_options = {
+--         wrap = true,
+--         linebreak = true,
+--         foldcolumn = "2",
+--         winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+--       },
+--     },
+--     popup_input = {
+--       prompt = "  ",
+--       border = {
+--         highlight = "FloatBorder",
+--         style = "rounded",
+--         text = {
+--           top_align = "center",
+--           top = " Prompt ",
+--         },
+--       },
+--       win_options = {
+--         winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+--       },
+--       submit = "<C-Enter>",
+--       submit_n = "<Enter>",
+--     },
+--     settings_window = {
+--       border = {
+--         style = "rounded",
+--         text = {
+--           top = " Settings ",
+--         },
+--       },
+--       win_options = {
+--         winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
+--       },
+--     },
+--     openai_params = {
+--       model = "gpt-3.5-turbo",
+--       frequency_penalty = 0,
+--       presence_penalty = 0,
+--       max_tokens = 300,
+--       temperature = 0,
+--       top_p = 1,
+--       n = 1,
+--     },
+--     openai_edit_params = {
+--       model = "code-davinci-edit-001",
+--       temperature = 0,
+--       top_p = 1,
+--       n = 1,
+--     },
+--     actions_paths = {},
+--     show_quickfixes_cmd = "Trouble quickfix",
+--     predefined_chat_gpt_prompts = "https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv",
+--   }
+-- Secrets Management
+-- Providing the OpenAI API key via an environment variable is dangerous, as it leaves the API key easily readable by any process that can access the environment variables of other processes. In addition, it encourages the user to store the credential in clear-text in a configuration file.
+
+-- As an alternative to providing the API key via the OPENAI_API_KEY environment variable, the user is encouraged to use the api_key_cmd configuration option. The api_key_cmd configuration option takes a string, which is executed at startup, and whose output is used as the API key.
+
+-- The following configuration would use 1Passwords CLI, op, to fetch the API key from the credential field of the OpenAI entry.
+
+-- require("chatgpt").setup({
+--     api_key_cmd = "op read op://private/OpenAI/credential --no-newline"
+-- })
+-- The following configuration would use GPG to decrypt a local file containing the API key
+
+-- local home = vim.fn.expand("$HOME")
+-- require("chatgpt").setup({
+--     api_key_cmd = "gpg --decrypt " .. home .. "/secret.txt.gpg"
+-- })
+-- Usage
+-- Plugin exposes following commands:
+
+-- ChatGPT
+-- ChatGPT command which opens interactive window using the gpt-3.5-turbo model. (also known as ChatGPT)
+
+-- ChatGPTActAs
+-- ChatGPTActAs command which opens a prompt selection from Awesome ChatGPT Prompts to be used with the gpt-3.5-turbo model.
+
+-- preview image
+
+-- ChatGPTEditWithInstructions
+-- ChatGPTEditWithInstructions command which opens interactive window to edit selected text or whole window using the code-davinci-edit-002 model (GPT 3.5 fine-tuned for coding).
+
+-- You can map it using the Lua API, e.g. using which-key.nvim:
+
+-- local chatgpt = require("chatgpt")
+-- wk.register({
+--     p = {
+--         name = "ChatGPT",
+--         e = {
+--             function()
+--                 chatgpt.edit_with_instructions()
+--             end,
+--             "Edit with instructions",
+--         },
+--     },
+-- }, {
+--     prefix = "<leader>",
+--     mode = "v",
+-- })
+-- demo video.
+-- preview image
+
+-- ChatGPTRun
+-- ChatGPTRun [action] command which runs specific actions -- see actions.json file for a detailed list. Available actions are:
+
+-- grammar_correction
+-- translate
+-- keywords
+-- docstring
+-- add_tests
+-- optimize_code
+-- summarize
+-- fix_bugs
+-- explain_code
+-- roxygen_edit
+-- code_readability_analysis -- see demo
+-- All the above actions are using gpt-3.5-turbo model.
+
+-- It is possible to define custom actions with a JSON file. See actions.json for an example. The path of custom actions can be set in the config (see actions_paths field in the config example above).
+
+-- An example of custom action may look like this: (# marks comments)
+
+-- {
+--   "action_name": {
+--     "type": "chat", # or "completion" or "edit"
+--     "opts": {
+--       "template": "A template using possible variable: {{filetype}} (neovim filetype), {{input}} (the selected text) an {{argument}} (provided on the command line)",
+--       "strategy": "replace", # or "display" or "append" or "edit"
+--       "params": { # parameters according to the official OpenAI API
+--         "model": "gpt-3.5-turbo", # or any other model supported by `"type"` in the OpenAI API, use the playground for reference
+--         "stop": [
+--           "```" # a string used to stop the model
+--         ]
+--       }
+--     },
+--     "args": {
+--       "argument": {
+--           "type": "strig",
+--           "optional": "true",
+--           "default": "some value"
+--       }
+--     }
+--   }
+-- }
