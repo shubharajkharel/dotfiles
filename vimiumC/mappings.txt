@@ -1,0 +1,89 @@
+# Insert your preferred key mappings here.
+map <c-u> scrollFullPageUp
+map <c-d> scrollFullPageDown
+
+unmap h
+unmap l
+map h goBack
+map l goForward
+
+unmap H
+unmap L
+map H previousTab
+map L nextTab
+
+unmap p
+unmap P
+
+unmap i
+map i focusInput
+
+unmap b
+unmap B
+
+map <m-w> removeTab
+
+unmap ^
+unmap yt
+
+unmap <a-r>
+unmap R
+
+
+map <c-+> zoomIn
+map <c--> zoomOut
+map <c-0> zoomReset
+
+unmap gs
+
+unmap <s-f1>
+unmap <f2>
+unmap gi
+
+unmap gu
+unmap gU
+
+map I LinkHints.activateEdit
+
+unmap <f1>
+
+unmap gf
+unmap gF
+
+unmap ge
+unmap gE
+unmap gn
+
+unmap <a-n>
+unmap <a-s-r>
+unmap gt
+
+unmap h
+map h goBack
+unmap l
+map l goForward
+
+unmap J
+unmap gT
+unmap <a-c>
+
+unmap <a-s-c>
+unmap K
+unmap <a-v>
+map K nextTab
+
+unmap <a-t>
+
+unmap W
+map <c->> moveTabToNextWindow
+
+unmap <a-p>
+unmap <a-m>
+
+
+map gx0 closeTabsOnLeft
+map gx$ closeTabsOnRight
+
+unmap yv 
+unmap v
+map v LinkHints.activateSelect
